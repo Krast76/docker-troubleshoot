@@ -5,3 +5,11 @@ Available packages :
 * dig
 * nc
 * curl
+
+Kubernetes run example :
+
+``` bash
+# kubectl run -it --image krast/docker-troubleshoot myshell -- /bin/sh
+```
+
+It will create a deployment object named "myshell"
