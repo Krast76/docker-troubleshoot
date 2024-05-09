@@ -12,4 +12,4 @@ RUN apk update && apk add curl \
                           nmap
 COPY --from=curler /home/curl_user/grpcurl /bin/grpcurl
 COPY --from=curler /home/curl_user/ghz /bin/ghz
-COPY --from=k8 /usr/bin/k6 /bin/k6
+COPY --from=k6 /usr/bin/k6 /bin/k6
